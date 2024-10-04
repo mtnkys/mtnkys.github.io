@@ -62,6 +62,8 @@
     I'm mtnky <3
     <br>please click anywhere
   </div>
+
+  
   <div id="screenB" style="display: none;">
     <h1>画面Bです</h1>
   </div>
@@ -96,10 +98,10 @@ window.addEventListener('mousemove', (event) => {
     const screenA = document.getElementById('screenA');
 const screenB = document.getElementById('screenB');
 
-    screenA.addEventListener('click', () => {
-      screenA.style.display = 'none';
-      screenB.style.display = 'block';
-    });
+document.body.addEventListener('click', () => {
+  screenA.style.display = 'none';
+  screenB.style.display = 'block';
+});
   </script>
 </body>
 
