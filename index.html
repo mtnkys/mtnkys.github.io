@@ -180,7 +180,7 @@ html {
 
   
   <div id="screenB" style="display: none;" background="mtnky.png" class="scb">
-
+<audio src="pirapi.mp3" id="music"></audio>
 		<div style="position:relative;top:100px;bottom:0;right:0;left:0;background-color:#eb8fe9; width:700px; height:550px; margin:auto;"><font size:6><br><br></font><font color="#ff9191">
 		<h1 class="orbitron">mtnky</h1>
 <center><button class="dc" onclick="alert('Discord: mtnky')"><div class="orbitron">Discord</div></button><font size=5><br></font><button class="shadow" onclick="location.href='https://www.youtube.com/@Bw5niper?sub_confirmation=1'"><div class="orbitron">YT</div></button></center>
@@ -256,6 +256,8 @@ const screenB = document.getElementById('screenB');
 document.body.addEventListener('click', () => {
   screenA.style.display = 'none';
   screenB.style.display = 'block';
+	
+  music.play();
 });
 
 	  document.body.addEventListener('click', () => {
