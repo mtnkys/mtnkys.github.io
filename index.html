@@ -58,6 +58,15 @@
 <body>
   
   <div id="particles"></div>
+  <div id="screenA">
+    I'm mtnky <3
+    <br>please click anywhere
+  </div>
+  <div id="screenB" style="display: none;">
+    <h1>画面Bです</h1>
+  </div>
+
+    
   <script>
     const particles = document.getElementById('particles');
 
@@ -82,10 +91,16 @@ window.addEventListener('mousemove', (event) => {
     particle.style.opacity = 0;
   }, 500);
 });
+
+
+    const screenA = document.getElementById('screenA');
+const screenB = document.getElementById('screenB');
+
+    screenA.addEventListener('click', () => {
+      screenA.style.display = 'none';
+      screenB.style.display = 'block';
+    });
   </script>
-  <div>
-    mtnky <3
-  </div>
 </body>
 
 </html>
