@@ -20,7 +20,17 @@
       background-color: purple;
       border-radius: 50%;
       opacity: 0;
+      animation: fall 1s ease-in-out forwards;
     }
+@keyframes fall {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
 
     body {
       overflow: hidden;
