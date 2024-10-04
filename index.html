@@ -53,6 +53,109 @@
       }
     }
   </style>
+  	<style>
+nav {
+  width: 100%;
+  height: 190px;
+  background-color: #3e32a8;
+  padding-top: 5px;
+  box-sizing: border-box;
+  border-radius: 2000px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+		
+body {
+  background-image: "mtnky.png";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+img{
+   position: absolute;
+   top:-3%;
+   left:50%;
+transform: translate(-50%,-50%);
+}
+.orbitron {
+  font-family: Minecraftia, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.shadow {
+  width:100px;
+  font-size:12px;
+  color:#FFFFFF;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background: transparent;
+  border-radius: 2000px;
+  border: 1px solid gray;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.shadow:hover {
+  width:100px;
+  font-size:12px;
+  color:#FFFFFF;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid white;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.dc {
+  width:100px;
+  font-size:12px;
+  color:#FFFFFF;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background: transparent;
+  border-radius: 0px;
+  border: 1px solid gray;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.dc:hover {
+  width:100px;
+  font-size:12px;
+  color:#FFFFFF;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background: transparent;
+  border-radius: 0px;
+  border: 1px solid white;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.orbitroned {
+  font-family: Minecraftia, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+　width: 200px;
+
+}
+</style>
 </head>
 
 <body>
@@ -63,8 +166,57 @@
   </div>
 
   
-  <div id="screenB" style="display: none;">
-    <h1>I'm mtnky <3</h1>
+  <div id="screenB" style="display: none;" background="mtnky.png">
+    
+
+		<div style="position:relative;top:100px;bottom:0;right:0;left:0;background-color:#000238; width:700px; height:550px; margin:auto;"><font size:6><br><br></font><img src="ww3.png"></img><font color="#ffffff">
+		<h1 class="orbitron">mtnky</h1>
+<center><button class="dc" onclick="alert('Discord: mtnky')"><div class="orbitron">Discord</div></button><font size=5><br></font><button class="shadow" onclick="location.href='https://www.youtube.com/@dabanky?sub_confirmation=1'"><div class="orbitron">YT</div></button></center>
+</font></div><br><br><br><br><br><br><!-- JavaScriptのコード -->
+<script>
+  // テキストリンクの要素を取得する
+  const click = document.getElementById("click");
+
+  // イベントを設定する
+  click.addEventListener("click", handleClick);
+
+	
+    var rev = "fwd";
+    function titlebar(val){
+        var msg = "sniped by mtnky!<3";
+        var res = " ";
+        var speed = 70;
+        var pos = val;
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+
+</script>
   </div>
 
     
