@@ -247,16 +247,19 @@ window.addEventListener('mousemove', (event) => {
 });
 
 
+  music.volume = 0.7;
     const screenA = document.getElementById('screenA');
 const screenB = document.getElementById('screenB');
 const music = document.querySelector("#music");
 document.body.addEventListener('click', () => {
   screenA.style.display = 'none';
   screenB.style.display = 'block';
+  music.volume = 0.7;
 	
   music.play();
-	music.volume = 0.7;
+  music.volume = 0.7;
 });
+  music.volume = 0.7;
 
 	  document.body.addEventListener('click', () => {
   screenA.classList.add('hidden');
